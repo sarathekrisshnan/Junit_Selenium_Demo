@@ -12,13 +12,13 @@ public class SampleTest {
 		
 		@Before
 		public void setUp() {
-			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "chromedriver");
 			driver = new ChromeDriver();
 		}
 		
 		@After
 		public void destroy() {
-			driver.quit();
+			//driver.quit();
 		}
 		
 		@Test
